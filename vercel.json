@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "handmade_and_unique_goods/wsgi.py",
