@@ -1,0 +1,76 @@
+
+/* Card styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.card:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.img-fluid {
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+/* Card body styling */
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Product price styling */
+.text-primary, .text-danger {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+/* Quantity select styling */
+.form-select {
+    width: 80px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border 0.3s ease-in-out;
+}
+
+.form-select:hover {
+    border-color: #6c757d;
+}
+
+/* Button styling */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Add to Cart button styling */
+#add-cart {
+    background-color: #6c757d;
+    color: #ffffff;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease-in-out;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#add-cart:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}

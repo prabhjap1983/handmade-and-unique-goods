@@ -1,0 +1,89 @@
+/* Custom styles for the navbar */
+.navbar {
+    background-color: #343a40; /* Dark background color */
+    padding: 1rem; /* Adjust padding for better spacing */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Larger font size for the brand */
+    font-weight: bold; /* Bold font for the brand */
+    color: #ffffff; /* Text color of the brand */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Color of the toggler icon */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Text color of the links */
+    margin-right: 15px; /* Adjust spacing between the links */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #17a2b8; /* Text color on hover */
+}
+
+.navbar-nav .active {
+    font-weight: bold; /* Bold font for the active link */
+}
+
+/* Apply border-bottom only to the home link */
+.navbar-nav .home-link.active {
+    border-bottom: 2px solid #ffffff; /* Add a border on the active link */
+}
+
+.dropdown-menu {
+    background-color: #dce8f7; /* Background color of the dropdown menu */
+}
+
+.dropdown-item {
+    color: #000000; /* Text color of the dropdown items */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.dropdown-item:hover {
+    background-color: #17a2b8; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+.btn-outline-light {
+    color: #ffffff; /* Text color of the outline button */
+    border-color: #ffffff; /* Border color of the outline button */
+    border-radius: 25px; /* Add border-radius for rounded corners */
+    padding: 8px 15px; /* Adjust padding for better button shape */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.btn-outline-light:hover {
+    color: #17a2b8; /* Text color on hover */
+    background-color: #ffffff; /* Background color on hover */
+}
+
+/* Adjust cart button and badge */
+.btn-cart {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #17a2b8; /* Badge background color */
+    color: #ffffff; /* Badge text color */
+    border-radius: 50%; /* Make badge circular */
+    padding: 4px 8px; /* Adjust padding for better badge shape */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Add logo styles */
+.logo {
+    max-height: 50px; /* Adjust the maximum height of the logo */
+}
+

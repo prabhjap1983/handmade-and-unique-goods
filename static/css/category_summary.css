@@ -1,0 +1,28 @@
+/* Additional styles for the category page */
+.category-link {
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-anchor {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #456de4;
+    text-decoration: none;
+    transition: color 0.3s ease, font-size 0.2s ease, border-bottom 0.2s ease, opacity 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Initial box shadow with no blur */
+}
+
+.category-anchor:hover {
+    color: #17a2b8;
+    border-bottom: 2px solid #17a2b8;
+    font-size: 1.1em;
+    box-shadow: 0 0 20px rgba(23, 162, 184, 0.2); /* Slightly toned down box shadow on hover */
+    opacity: 0.8; /* Reduced opacity on hover */
+    transform: scale(1.03); /* Slight scale increase on hover */
+}
+
+.category-link:hover {
+    background-color: #f8f9fa; /* Change the background color on hover */
+}

@@ -1,0 +1,67 @@
+<!-- Navigation-->
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    {% comment %} <div class="container px-4 px-lg-4">  {% endcomment %}
+    {% comment %} <div class="container fluid"> {% endcomment %}
+        {% comment %} <a class="navbar-brand" href="{% url 'home' %}">Handmade & Unique Goods</a> {% endcomment %}
+        <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static 'img\logo4.png' %}" alt="Logo" height="48" width="50" class="d-inline-block align-text-top">
+            Handmade & Unique Goods
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {% comment %} <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4"> {% endcomment %}
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a></li>
+                {% comment %} <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'search' %}">Search</a></li> {% endcomment %}
+                <li class="nav-item"><a class="nav-link"  href="{% url 'search' %}">Search</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+
+        {% if user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'update_user' %}">User Profile</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="{% url 'update_info' %}">User Info </a></li>
+                    </ul>
+                </li>
+
+
+
+
+            <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
+            <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="{% url 'register' %}">Register</a></li>
+        {% endif %}
+                
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'category_summary'%}">All Products</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Accessories'%}">Accessories</a></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Home Decor'%}">Home Decor</a></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Gifts and Souvenirs'%}">Gifts and Souvenirs</a></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Pottery'%}">Pottery</a></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Craft Items'%}">Craft Items</a></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Food Products'%}">Food Products</a></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Cloth Items'%}">Cloth Items</a></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Stationery Items'%}">Stationery Item</a></li>
+                        <li><a class="dropdown-item" href="{% url 'category' 'Toys & Games'%}">Toys & Games</a></li>
+                    </ul>
+                </li>
+            </ul>
+           <form class="d-flex">
+<a href="{%  url 'cart_summary' %}" class="btn btn-outline-light" id="cart_quantity"><i class="bi-cart-fill me-1"></i>
+            Cart
+<span class="badge bg-dark text-white ms-1 rounded-pill">{{ cart|length }}</span></a>
+                
+            </form>
+        </div>
+    </div>
+</nav>

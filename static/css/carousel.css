@@ -1,0 +1,179 @@
+/* Custom styles for the carousel
+#carouselExampleCaptions {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    height: 500px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* Custom styles for carousel controls */
+/*.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #343a40;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #17a2b8;
+    transform: scale(1.2);
+    opacity: 1;
+} */
+
+/* Custom styles for the carousel */
+#carouselExampleCaptions {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    height: 500px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.3)); /* Gradient background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Subtle box shadow */
+}
+
+.carousel-caption h5 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.carousel-caption p {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* Custom styles for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+    background: none; /* Remove background */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ffffff;
+    border: 1px solid #343a40;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle box shadow */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #17a2b8;
+    transform: scale(1.2);
+    border-color: #17a2b8;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle box shadow on hover */
+}
+/* Additional styles for carousel items */
+.carousel-item img {
+    width: 100%; /* Make sure the images fill the entire carousel item */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle box shadow for images */
+}
+
+/* Add hover effect for carousel items */
+.carousel-item:hover {
+    transform: scale(1.05); /* Enlarge the item on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styles for carousel indicators */
+.carousel-indicators {
+    margin-top: 20px;
+}
+
+.carousel-indicators li {
+    background-color: #6c757d; /* Inactive indicator color */
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #17a2b8; /* Active indicator color */
+    width: 14px;
+    height: 14px;
+}
+
+/* Styles for responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .carousel-caption {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .carousel-caption p {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8%; /* Adjust control button width for smaller screens */
+    }
+}

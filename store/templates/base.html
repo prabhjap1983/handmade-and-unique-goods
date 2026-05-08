@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Home | Handmade & Unique Goods</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico'%}">
+        <!-- Example: Include jQuery from a CDN -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+        <!-- Bootstrap icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+        
+        <!-- Core theme CSS -->
+        <link href="{% static 'css/styles.css'%}" rel="stylesheet">
+        <!-- Footer CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/about-section.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/carousel.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/category_summary.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/product.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/cart_summary.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        {% if messages%}
+            {% for message in messages %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+          
+
+            {% endfor%}
+        {% endif %}    
+
+
+        {% block content %}
+
+        {% endblock %}
+        
+
+
+
+
+
+        <footer class="footer1" style="background-color: #333; color: #fff; padding: 40px 0; box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);">
+          <div class="container">
+              <div class="row">
+                  <div class="footer-col col-4" style="text-align: left; transition: background-color 0.3s ease-in-out;">
+                      <h3 class="info" style="font-size: 1.5em; margin-bottom: 20px; color: #fff; transition: color 0.3s ease-in-out; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Information</h3>
+                      <ul style="list-style: none; padding: 0;">
+                          <li><a href="http://127.0.0.1:8000/about/" style="color: #fff; text-decoration: none; transition: color 0.3s ease-in-out;">About Us</a></li>
+                          <li><a href="https://exclusivelane.com/pages/terms-conditions" style="color: #fff; text-decoration: none; transition: color 0.3s ease-in-out;">Terms and Conditions</a></li>
+                          <li><a href="https://exclusivelane.com/policies/privacy-policy" style="color: #fff; text-decoration: none; transition: color 0.3s ease-in-out;">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+      
+                  <div class="footer-col col-4" style="text-align: left; transition: background-color 0.3s ease-in-out;">
+                      <h3 class="info" style="font-size: 1.5em; margin-bottom: 20px; color: #fff; transition: color 0.3s ease-in-out; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Contact Us</h3>
+                      <ul style="list-style: none; padding: 0;">
+                          <li><a href="https://www.google.com/maps/place/Janta+Nagar,+Ludhiana,+Punjab+141003/@30.878795,75.882182,6z/data=!4m6!3m5!1s0x391a82f00f4c0429:0x1e10142fcc6338ef!8m2!3d30.8794397!4d75.8635625!16s%2Fg%2F1jkyd5xjm?hl=en&entry=ttu" style="color: #fff; text-decoration: none; transition: color 0.3s ease-in-out;">Janta Nagar/Ludhiana 141003</a></li>
+                          <li><a href="https://craftingemails.com/" style="color: #fff; text-decoration: none; transition: color 0.3s ease-in-out;">Email: craftingemails.com</a></li>
+                      </ul>
+                  </div>
+      
+                  <div class="footer-col col-4" style="text-align: left; transition: background-color 0.3s ease-in-out;">
+                      <h3 class="info" style="font-size: 1.5em; margin-bottom: 20px; color: #fff; transition: color 0.3s ease-in-out; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Follow Us</h3>
+                      <div class="social-links">
+                          <a href="https://www.facebook.com/exclusivelane" style="color: #fff; text-decoration: none; font-size: 1.5em; margin-right: 15px; transition: color 0.3s ease-in-out;"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://www.instagram.com/exclusivelane/" style="color: #fff; text-decoration: none; font-size: 1.5em; margin-right: 15px; transition: color 0.3s ease-in-out;"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.youtube.com/channel/UCpfji_t9T-xheIkDmDCaZoQ" style="color: #fff; text-decoration: none; font-size: 1.5em; transition: color 0.3s ease-in-out;"><i class="fa-brands fa-youtube"></i></a>
+                          <a href="https://www.pinterest.com/exclusivelane/" style="color: #fff; text-decoration: none; font-size: 1.5em; margin-right: 15px; transition: color 0.3s ease-in-out;"><i class="fab fa-pinterest"></i></a>
+                          <a href="https://twitter.com/exclusivelane" style="color: #fff; text-decoration: none; font-size: 1.5em; transition: color 0.3s ease-in-out;"><i class="fab fa-twitter"></i></a>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+      <script>
+          document.querySelectorAll('.footer-col').forEach(col => {
+              col.addEventListener('mouseenter', () => {
+                  col.style.backgroundColor = '#555';
+                  col.querySelector('.info').style.color = '#17a2b8'; // Change text color on hover
+              });
+              col.addEventListener('mouseleave', () => {
+                  col.style.backgroundColor = '';
+                  col.querySelector('.info').style.color = ''; // Reset text color when mouse leaves
+              });
+              col.addEventListener('click', () => {
+                  col.querySelector('.info').style.color = '#ff6347'; // Change text color when clicked
+              });
+          });
+
+          
+          document.querySelectorAll('.footer-col a').forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                link.style.color = 'white'; // Change link color on hover to light grey
+                link.style.textShadow = '2px 2px 4px rgba(169, 169, 169, 0.8)'; // Add grey text shadow on hover
+            });
+            link.addEventListener('mouseleave', () => {
+                link.style.color = ''; // Reset link color when mouse leaves
+                link.style.textShadow = ''; // Reset text shadow when mouse leaves
+            });
+            link.addEventListener('click', () => {
+                link.style.color = '#ff6347'; // Change link color when clicked to a reddish color
+            });
+        });
+        
+        
+      </script>
+      
+      
+      
+      
+      
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{%static 'js/scripts.js'%}"></script>
+    </body>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
