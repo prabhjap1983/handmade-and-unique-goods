@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "handmade_and_unique_goods/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "handmade_and_unique_goods/wsgi.py"
+    }
+  ]
+}
